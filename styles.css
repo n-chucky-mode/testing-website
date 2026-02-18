@@ -163,9 +163,13 @@ p{
   margin: 0; /*ADDED BY ME: changed margin to 0*/
 }
 
+/* ADDED BY ME: matching mockup – centered narrower paragraph instead of full-width padded block */
 #homeMain p{
-  padding: 1rem;
+  max-width: 70ch;
+  margin: 0 auto 2rem auto;
+  padding: 0;
 }
+
 
 #aboutPlants{
   background-color: var(--blue);
@@ -237,7 +241,8 @@ header img{
 #hero{
   width: 100%;
   max-width: 1200px;
-  margin: 1rem auto;
+  margin: 2rem auto 1.5rem auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0,00.25);/*changed trying to match mockuo hero size and center and shadow*/
 }
 
 #homeMain span{
