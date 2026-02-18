@@ -41,14 +41,18 @@
         <a href="#main" id="skip">Skip to Main Content</a>
         <header>
             <h1>The Secret Garden</h1>
-            <a href="#" id="logo">
+
+            <!-- ADDED BY ME: I changed the logo link from "#" to "#main" so clicking the logo doesn’t do the useless jump -->
+            <a href="#main" id="logo">
                 <img src="https://www.public.asu.edu/~jlbarn11/teaching/leafLogo.png" alt="The Secret Garden logo is a layered seedling in two shades of green">
             </a>
+
             <nav>
                 <h2 class="hidden">Main Navigation</h2>
                 <ul>
                     <!-- ADDED BY ME: I’m making these links jump to sections on THIS page instead of “#” doing nothing -->
-                    <li><a href="#main" class="active">Home</a></li>
+                    <!-- ADDED BY ME: aria-current helps screen readers know this is the current/active page -->
+                    <li><a href="#main" class="active" aria-current="page">Home</a></li>
                     <li><a href="#aboutPlants">Plants</a></li>
                     <li><a href="#contactUs">Contact</a></li>
 
@@ -105,9 +109,5 @@
         </footer>
     </body>
 </html>
-
-
-
-
 
 
