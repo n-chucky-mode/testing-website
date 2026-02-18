@@ -47,10 +47,11 @@
             <nav>
                 <h2 class="hidden">Main Navigation</h2>
                 <ul>
-                    <!-- ADDED BY ME: aria-current helps screen readers know which page is active -->
-                    <li><a href="#" class="active" aria-current="page">Home</a></li>
-                    <li><a href="#">Plants</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <!-- ADDED BY ME: I’m making these links jump to sections on THIS page instead of “#” doing nothing -->
+                    <li><a href="#main" class="active">Home</a></li>
+                    <li><a href="#aboutPlants">Plants</a></li>
+                    <li><a href="#contactUs">Contact</a></li>
+
                 </ul>
             </nav>
         </header>
@@ -82,12 +83,23 @@
         <footer>
             <div>
                 <section>
-                    <h2>Location</h2>
-                    <address>
-                        <!-- ADDED BY ME: I added line breaks so the address/phone/email aren’t smashed together -->
-                        1234 Main Street, Bellevue, WA 98009<br>
-                        <span class="desktop">(555) 123-4567</span><br> 
-                        <a href="tel:1-555-123-4567" class="mobile">(555) 123-4567</a><br>
-                        <!-- ADDED BY ME: I lowercased the email (emails are typically lowercase + it’s cleaner)
+                <h2>Location</h2>
+                <address>
+                    1234 Main Street, Bellevue, WA 98009<br>
+                    <span class="desktop">(555) 123-4567</span><br>
+                    <a href="tel:1-555-123-4567" class="mobile">(555) 123-4567</a><br>
+                    <a href="mailto:contact@thesecretgarden.com">contact@thesecretgarden.com</a>
+                </address>
+                </section>
+
+                <!-- ADDED BY ME: the mockup has the social media block in the footer, and my CSS already styles #socialMedia -->
+                <section id="socialMedia">
+                <h2>Find Us on Social Media</h2>
+                <a href="#" title="Find us on Facebook"><img src="https://www.public.asu.edu/~jlbarn11/teaching/facebook.png" alt="square Facebook logo"></a>
+                <a href="#" title="View our Instagram account"><img src="https://www.public.asu.edu/~jlbarn11/teaching/instagram.png" alt="instagram camera logo"></a>
+                <a href="#" title="Visit our Pinterest Boards"><img src="https://www.public.asu.edu/~jlbarn11/teaching/pinterest.png" alt="Pinterest logo"></a>
+                </section>
+        </footer>
+
 
 
